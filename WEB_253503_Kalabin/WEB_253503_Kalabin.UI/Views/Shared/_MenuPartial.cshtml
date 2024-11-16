@@ -1,0 +1,16 @@
+@{
+    var controller = ViewContext.RouteData.Values["controller"]?
+    .ToString()?
+    .ToLower()
+    ?? String.Empty;
+}
+
+
+<!-- меню сайта -->
+<a class="navbar-brand @(controller=="home"?"active":"")" href="#">WebLabsV02</a>
+<div class="navbar-nav">
+    <a asp-controller="Home" asp-action="Index" class="nav-item nav-link @(controller=="home"?"active":"")">Лб 1</a>
+    <a asp-controller="Clothes" asp-action="Index" class="nav-item nav-link @(controller=="shows"?"active":"")">Каталог</a>
+    <a asp-area="Admin" asp-page="/Index" class="nav-item nav-link">Администрирование</a>
+</div>
+<!-- меню сайта - конец -->

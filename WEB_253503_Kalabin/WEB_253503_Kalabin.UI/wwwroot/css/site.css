@@ -1,0 +1,16 @@
+header, footer {
+  background-color: rgba(var(--bs-dark-rgb));
+}
+
+.nav-color {
+  color: rgba(255, 255, 255, 0.5)
+}
+
+ol {
+  border-bottom: 2px solid black; /* Параметры линии под текстом */
+  font-weight: normal; /* Убираем жирное начертание */
+  padding-bottom: 5px; /* Расстояние от текста до линии */
+}
+
+
+
