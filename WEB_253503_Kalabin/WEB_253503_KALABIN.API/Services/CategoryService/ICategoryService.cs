@@ -1,7 +1,7 @@
-using WEB_253503_Kalabin.Domain.Models;
 using WEB_253503_Kalabin.Domain.Entities;
+using WEB_253503_Kalabin.Domain.Models;
 
-namespace WEB_253503_Kalabin.UI.Services.CategoryService;
+namespace WEB_253503_KALABIN.API.Services.CategoryService;
 
 public interface ICategoryService
 {

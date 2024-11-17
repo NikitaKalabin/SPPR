@@ -14,4 +14,8 @@
       <ProjectReference Include="..\WEB_253503_Kalabin.Domain\WEB_253503_Kalabin.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Areas\Admin\Pages\" />
+    </ItemGroup>
+
 </Project>

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_Kalabin.UI", "WE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_Kalabin.Domain", "WEB_253503_Kalabin.Domain\WEB_253503_Kalabin.Domain.csproj", "{68E9D07F-93DC-4730-A288-68515A92E033}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_KALABIN.API", "WEB_253503_KALABIN.API\WEB_253503_KALABIN.API.csproj", "{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{68E9D07F-93DC-4730-A288-68515A92E033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68E9D07F-93DC-4730-A288-68515A92E033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68E9D07F-93DC-4730-A288-68515A92E033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

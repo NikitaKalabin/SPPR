@@ -1,0 +1,6 @@
+@WEB_253503_KALABIN.API_HostAddress = http://localhost:5289
+
+GET {{WEB_253503_KALABIN.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

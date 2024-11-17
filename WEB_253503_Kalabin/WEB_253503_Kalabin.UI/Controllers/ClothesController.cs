@@ -19,8 +19,8 @@ public class ClothesController: Controller
 
     public async Task<IActionResult> Index(string? category, int pageNo = 1)
     {
-        var genreResponse = await _categoryService.GetGenreListAsync();
-        var clothesResponse = await _clothesService.GetShowListAsync(category, pageNo);
+        var genreResponse = await _categoryService.GetCategoryListAsync();
+        var clothesResponse = await _clothesService.GetClothesListAsync(category, pageNo);
 
         if (!clothesResponse.Successfull) return NotFound(clothesResponse.ErrorMessage);
         if (!genreResponse.Successfull) return NotFound(genreResponse.ErrorMessage);

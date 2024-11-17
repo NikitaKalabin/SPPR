@@ -1,4 +1,7 @@
+using WEB_253503_Kalabin.UI;
 using WEB_253503_Kalabin.UI.Extensions;
+using WEB_253503_Kalabin.UI.Services.CategoryService;
+using WEB_253503_Kalabin.UI.Services.ClothesService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +9,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.RegisterCustomServices();
+
+var uriData = new UriData
+{
+    ApiUri = builder.Configuration.GetSection("UriData").GetValue<string>("ApiUri")!
+};
+
+builder.Services
+    .AddHttpClient<IClothesService, ApiClothesService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
+
+builder.Services
+    .AddHttpClient<ICategoryService, ApiCategoryService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
 
 var app = builder.Build();
 
