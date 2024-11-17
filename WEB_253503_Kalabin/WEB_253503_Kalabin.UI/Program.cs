@@ -2,12 +2,13 @@ using WEB_253503_Kalabin.UI;
 using WEB_253503_Kalabin.UI.Extensions;
 using WEB_253503_Kalabin.UI.Services.CategoryService;
 using WEB_253503_Kalabin.UI.Services.ClothesService;
+using WEB_253503_Kalabin.UI.Services.FileService;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRazorPages();
 builder.RegisterCustomServices();
 
 var uriData = new UriData
@@ -16,10 +17,13 @@ var uriData = new UriData
 };
 
 builder.Services
-    .AddHttpClient<IClothesService, ApiClothesService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
+    .AddHttpClient<IFileService, FileService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
 
 builder.Services
-    .AddHttpClient<ICategoryService, ApiCategoryService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
+    .AddHttpClient<IClothesService, ClothesService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
+
+builder.Services
+    .AddHttpClient<ICategoryService, CategoryService>(opt => opt.BaseAddress = new Uri(uriData.ApiUri));
 
 var app = builder.Build();
 
@@ -42,4 +46,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapRazorPages();
 app.Run();

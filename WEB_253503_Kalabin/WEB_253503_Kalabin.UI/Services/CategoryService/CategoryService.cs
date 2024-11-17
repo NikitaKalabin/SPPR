@@ -7,11 +7,11 @@ using WEB_253503_Kalabin.Domain.Models;
 
 namespace WEB_253503_Kalabin.UI.Services.CategoryService;
 
-public class ApiCategoryService : ICategoryService
+public class CategoryService : ICategoryService
 {
     private readonly HttpClient _httpClient;
 
-    public ApiCategoryService(HttpClient httpClient, IConfiguration configuration)
+    public CategoryService(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
     }

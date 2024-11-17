@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using WEB_253503_KALABIN.API.Services.ClothesService;
 using WEB_253503_Kalabin.Domain.Entities;
 using WEB_253503_Kalabin.Domain.Models;
+using WEB_253503_Kalabin.UI.Services.ClothesService;
 
 namespace WEB_253503_KALABIN.API.Controllers
 {

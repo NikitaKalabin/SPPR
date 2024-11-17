@@ -25,10 +25,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\WEB_253503_Kalabin.Domain\WEB_253503_Kalabin.Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\WEB_253503_Kalabin.UI\WEB_253503_Kalabin.UI.csproj" />
     </ItemGroup>
 
 </Project>

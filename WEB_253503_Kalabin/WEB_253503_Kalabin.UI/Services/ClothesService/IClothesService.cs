@@ -12,5 +12,6 @@ public interface IClothesService
     public Task UpdateClothesAsync(int id, Clothes product, IFormFile? formFile);
     public Task DeleteClothesAsync(int id);
     public Task<ResponseData<Clothes>> CreateClothesAsync(Clothes clothes);
+    public Task<ResponseData<Clothes>> CreateClothesAsync(Clothes clothes, IFormFile? file);
     public Task<ResponseData<string>> SaveImageAsync(int id, IFormFile? formFile);
 }

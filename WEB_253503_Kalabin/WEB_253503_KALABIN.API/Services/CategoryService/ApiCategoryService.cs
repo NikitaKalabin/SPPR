@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using WEB_253503_KALABIN.API.Data;
 using WEB_253503_Kalabin.Domain.Entities;
 using WEB_253503_Kalabin.Domain.Models;
+using WEB_253503_Kalabin.UI.Services.CategoryService;
 
 namespace WEB_253503_KALABIN.API.Services.CategoryService;
 
-public class CategoryService(AppDbContext dbContext) : ICategoryService
+public class ApiCategoryService(AppDbContext dbContext) : ICategoryService
 {
     public Task<ResponseData<List<Category>>> GetCategoryListAsync()
     {

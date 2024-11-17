@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using WEB_253503_KALABIN.API.Data;
 using WEB_253503_Kalabin.Domain.Entities;
 using WEB_253503_Kalabin.Domain.Models;
+using WEB_253503_Kalabin.UI.Services.ClothesService;
 
 namespace WEB_253503_KALABIN.API.Services.ClothesService;
 
-public class ClothesService(AppDbContext dbContext) : IClothesService
+public class ApiClothesService(AppDbContext dbContext) : IClothesService
 {
     
     public Task<ResponseData<ListModel<Clothes>>> GetClothesListAsync(string? categoryNormalizedName, int pageNo = 1, int pageSize = 3)
@@ -76,6 +77,13 @@ public class ClothesService(AppDbContext dbContext) : IClothesService
         dbContext.Clothes.Add(clothes);
         dbContext.SaveChanges();
         return Task.FromResult(ResponseData<Clothes>.Success(clothes));
+    }
+
+    public async Task<ResponseData<Clothes>> CreateClothesAsync(Clothes clothes, IFormFile? file)
+    {
+        dbContext.Clothes.Add(clothes);
+        await dbContext.SaveChangesAsync();
+        return ResponseData<Clothes>.Success(clothes);
     }
 
     public async Task<ResponseData<string>> SaveImageAsync(int id, IFormFile? formFile)

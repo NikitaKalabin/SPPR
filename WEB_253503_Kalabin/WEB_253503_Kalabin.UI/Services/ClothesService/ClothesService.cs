@@ -4,16 +4,19 @@ using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using WEB_253503_Kalabin.Domain.Entities;
 using WEB_253503_Kalabin.Domain.Models;
+using WEB_253503_Kalabin.UI.Services.FileService;
 
 namespace WEB_253503_Kalabin.UI.Services.ClothesService;
 
-public class ApiClothesService : IClothesService
+public class ClothesService : IClothesService
 {
     private readonly HttpClient _httpClient;
+    private readonly IFileService _fileService;
 
-    public ApiClothesService(HttpClient httpClient, IConfiguration configuration)
+    public ClothesService(HttpClient httpClient, IConfiguration configuration,IFileService fileService)
     {
         _httpClient = httpClient;
+        _fileService = fileService;
     }
 
     public async Task<ResponseData<ListModel<Clothes>>> GetClothesListAsync(string? categoryNormalizedName, int pageNo = 1, int pageSize = 3)
@@ -50,6 +53,17 @@ public class ApiClothesService : IClothesService
 
     public async Task UpdateClothesAsync(int id, Clothes product, IFormFile? formFile)
     {
+        if (product.Image != null && formFile != null)
+        {
+            await _fileService.DeleteFileAsync(product.Image.Split("/").Last());
+            product.Image = null;
+        }
+        if (formFile != null)
+        {
+            var url = await SaveImageAsync(id, formFile!);
+            product.Image = url.Data;
+        }
+
         var response = await _httpClient.PutAsJsonAsync($"{_httpClient.BaseAddress!.AbsoluteUri}Clothes/{id}", product);
         response.EnsureSuccessStatusCode();
     }
@@ -67,21 +81,30 @@ public class ApiClothesService : IClothesService
         return createdClothes ?? ResponseData<Clothes>.Error("Failed to create clothes.");
     }
 
-    public async Task<ResponseData<string>> SaveImageAsync(int id, IFormFile? formFile)
+    public async Task<ResponseData<Clothes>> CreateClothesAsync(Clothes clothes, IFormFile? file)
     {
-        if (formFile == null)
+        if (file != null)
         {
-            return ResponseData<string>.Error("Invalid image file.");
+            var url = await SaveImageAsync(0, file!);
+            clothes.Image = url.Data;
         }
 
-        using var content = new MultipartFormDataContent();
-        using var fileStream = formFile.OpenReadStream();
-        var fileContent = new StreamContent(fileStream);
-        fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(formFile.ContentType);
-        content.Add(fileContent, "formFile", formFile.FileName);
+        //await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+        var uri = new Uri(_httpClient.BaseAddress!.AbsoluteUri + "clothes");
+        var response = await _httpClient.PostAsJsonAsync(uri, clothes);
+        if (response.IsSuccessStatusCode)
+        {
+            var data = await response.Content.ReadFromJsonAsync<ResponseData<Clothes>>();
+            return data!;
+        }
+        //_logger.LogError($"-----> object not created. Error:{response.StatusCode.ToString()}");
+        return ResponseData<Clothes>.Error($"Объект не добавлен. Error:{response.StatusCode.ToString()}");
+    }
 
-        var response = await _httpClient.PostAsync($"{_httpClient.BaseAddress!.AbsoluteUri}clothes/{id}/image", content);
-        var imageUrl = await response.Content.ReadFromJsonAsync<ResponseData<string>>();
-        return imageUrl ?? ResponseData<string>.Error("Failed to save image.");
+    public async Task<ResponseData<string>> SaveImageAsync(int id, IFormFile formFile)
+    {
+        //await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+        var url = await _fileService.SaveFileAsync(formFile);
+        return ResponseData<string>.Success(url);
     }
 }
