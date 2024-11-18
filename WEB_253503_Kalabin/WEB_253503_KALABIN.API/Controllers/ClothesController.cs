@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB_253503_KALABIN.API.Services.ClothesService;
 using WEB_253503_Kalabin.Domain.Entities;
@@ -41,6 +42,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // PUT: api/Clothes/5
         [HttpPut("{id}")]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<IActionResult> PutClothes(int id, Clothes clothes)
         {
             if (id != clothes.Id)
@@ -63,6 +65,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // POST: api/Clothes
         [HttpPost]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<ActionResult<Clothes>> PostClothes(Clothes clothes)
         {
             var result = await _clothesService.CreateClothesAsync(clothes);
@@ -71,6 +74,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // DELETE: api/Clothes/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<IActionResult> DeleteClothes(int id)
         {
             await _clothesService.DeleteClothesAsync(id);

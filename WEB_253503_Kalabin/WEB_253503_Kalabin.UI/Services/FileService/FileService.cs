@@ -1,23 +1,28 @@
 using System.Text;
 using System.Net.Http.Headers;
+using WEB_253503_Kalabin.UI.Services.Authentication;
 
 namespace WEB_253503_Kalabin.UI.Services.FileService;
 
 public class FileService : IFileService
 {
     private readonly HttpClient _httpClient;
-    public FileService(HttpClient httpClient)
+    private readonly ITokenAccessor _tokenAccessor;
+    public FileService(HttpClient httpClient, ITokenAccessor tokenAccessor)
     {
         _httpClient = httpClient;
+        _tokenAccessor = tokenAccessor;
         //_httpContext = httpContextAccessor.HttpContext;
     }
     public async Task DeleteFileAsync(string fileUri)
     {
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var urlString = new StringBuilder($"{_httpClient.BaseAddress!.AbsoluteUri}imageupload/{fileUri}").ToString();
         var response = await _httpClient.DeleteAsync(urlString);
     }
     public async Task<string> SaveFileAsync(IFormFile formFile)
     {
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var urlString = new StringBuilder($"{_httpClient.BaseAddress!.AbsoluteUri}imageupload").ToString();
 
         var extension = Path.GetExtension(formFile.FileName);

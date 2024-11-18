@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB_253503_KALABIN.API.Services.CategoryService;
 using WEB_253503_Kalabin.Domain.Entities;
@@ -21,6 +22,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // GET: api/Category
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<ResponseData<List<Category>>>> GetClothesCategories()
         {
             return await _categoryService.GetCategoryListAsync();
@@ -40,6 +42,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // PUT: api/Category/5
         [HttpPut("{id}")]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<IActionResult> PutCategory(int id, Category category)
         {
             if (id != category.Id)
@@ -54,6 +57,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // POST: api/Category
         [HttpPost]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
             var result = await _categoryService.CreateCategoryAsync(category);
@@ -62,6 +66,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // DELETE: api/Category/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "POWER_USER")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             await _categoryService.DeleteCategoryAsync(id);
