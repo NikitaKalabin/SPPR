@@ -29,12 +29,9 @@ public class ApiClothesService(AppDbContext dbContext) : IClothesService
                 .ToList();
         }
 
-
-        int totalPages = searchResult.Count % pageSize == 0 ?
-            searchResult.Count / pageSize :
-            searchResult.Count / pageSize + 1;
-
-        if (pageNo > totalPages - 1)
+        int totalPages = (int)Math.Ceiling((double)searchResult.Count / pageSize);
+        
+        if (pageNo > totalPages)
         {
             return Task.FromResult(
                 ResponseData<ListModel<Clothes>>
@@ -44,7 +41,7 @@ public class ApiClothesService(AppDbContext dbContext) : IClothesService
         return Task.FromResult(
             ResponseData<ListModel<Clothes>>
                 .Success(
-                    new ListModel<Clothes> { Items = searchResult.Skip(pageSize * pageNo).Take(pageSize).ToList(), CurrentPage = pageNo, TotalPages = totalPages }
+                    new ListModel<Clothes> { Items = searchResult.Skip(pageSize * (pageNo-1)).Take(pageSize).ToList(), CurrentPage = pageNo, TotalPages = totalPages }
                 ));
     }
 

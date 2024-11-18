@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WEB_253503_Kalabin.Domain.Entities;
 using WEB_253503_Kalabin.Domain.Models;
+using WEB_253503_Kalabin.UI.Extensions;
 using WEB_253503_Kalabin.UI.Services.CategoryService;
 using WEB_253503_Kalabin.UI.Services.ClothesService;
 
@@ -17,18 +18,19 @@ public class ClothesController: Controller
         _categoryService = categoryService;
     }
 
+    [Route("catalog/{category?}")]
     public async Task<IActionResult> Index(string? category, int pageNo = 1)
     {
-        var genreResponse = await _categoryService.GetCategoryListAsync();
+        var categoryResponse = await _categoryService.GetCategoryListAsync();
         var clothesResponse = await _clothesService.GetClothesListAsync(category, pageNo);
 
         if (!clothesResponse.Successfull) return NotFound(clothesResponse.ErrorMessage);
-        if (!genreResponse.Successfull) return NotFound(genreResponse.ErrorMessage);
+        if (!categoryResponse.Successfull) return NotFound(categoryResponse.ErrorMessage);
         
         var request = HttpContext.Request;
-        string? currentGenreNormalizedName = request.Query["category"].ToString();
+        string currentCategoryNormalizedName = request.Query["category"].ToString();
 
-        ViewData["categories"] = genreResponse.Data;
+        ViewData["categories"] = categoryResponse.Data;
 
         if (string.IsNullOrEmpty(category))
         {
@@ -36,8 +38,16 @@ public class ClothesController: Controller
         }
         else
         {
-            ViewData["currentCategoryNormalizedName"] = currentGenreNormalizedName;
-            ViewData["currentCategory"] = genreResponse.Data!.Find(g => g.NormalizedName == category).Name;
+            ViewData["currentCategoryNormalizedName"] = currentCategoryNormalizedName;
+            if (categoryResponse.Data!.Find(g => g.NormalizedName == category) is null)
+            {
+                return NotFound("No genre with this name.");
+            }
+            ViewData["currentCategory"] = categoryResponse.Data!.Find(g => g.NormalizedName == category)!.Name;
+        }
+        
+        if (Request.IsAjaxRequest()){
+            return PartialView("~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml", clothesResponse.Data);
         }
         
         return View(clothesResponse.Data);

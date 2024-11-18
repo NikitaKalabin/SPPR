@@ -1,5 +1,6 @@
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Configuration;
 using WEB_253503_Kalabin.Domain.Entities;
@@ -14,19 +15,45 @@ public class ClothesService : IClothesService
     private readonly HttpClient _httpClient;
     private readonly IFileService _fileService;
     private readonly ITokenAccessor _tokenAccessor;
+    private readonly IConfiguration _configuration;
     public ClothesService(HttpClient httpClient, IConfiguration configuration,IFileService fileService, ITokenAccessor tokenAccessor)
     {
         _httpClient = httpClient;
         _fileService = fileService;
         _tokenAccessor = tokenAccessor;
+        _configuration = configuration;
     }
     
     public async Task<ResponseData<ListModel<Clothes>>> GetClothesListAsync(string? categoryNormalizedName, int pageNo = 1, int pageSize = 3)
     {
-            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
-            var response = await _httpClient.GetFromJsonAsync<ResponseData<ListModel<Clothes>>>(
-                $"{_httpClient.BaseAddress!.AbsoluteUri}Clothes?category={categoryNormalizedName}&pageNo={pageNo}&pageSize={pageSize}");
-            return response ?? ResponseData<ListModel<Clothes>>.Error("Failed to fetch clothes.");
+        var urlString = new StringBuilder($"{_httpClient.BaseAddress!.AbsoluteUri}Clothes/categories/");
+        if (categoryNormalizedName != null) urlString.Append($"{categoryNormalizedName}/");
+        else urlString.Append($"all");
+
+        if (pageNo > 0)
+        {
+            urlString.Append(QueryString.Create("pageno", pageNo.ToString()));
+            urlString.Append('&');
+        }
+
+        urlString.Append(QueryString.Create("pagesize", pageSize.ToString()));
+
+        var response = await _httpClient.GetAsync(new Uri(urlString.ToString()));
+        if (response.IsSuccessStatusCode)
+        {
+            try
+            {
+                //_logger.LogInformation($"-----> Info: {response.Content.ToJson()}");
+                return (await response.Content.ReadFromJsonAsync<ResponseData<ListModel<Clothes>>>())!;
+            }
+            catch (JsonException ex)
+            {
+                //_logger.LogError($"-----> Ошибка: {ex.Message}");
+                return ResponseData<ListModel<Clothes>>.Error($"Ошибка: {ex.Message}");
+            }
+        }
+        //_logger.LogError($"-----> Данные не получены от сервера. Error:{response.StatusCode}");
+        return ResponseData<ListModel<Clothes>>.Error($"Данные не получены от сервера. Error:{response.StatusCode}");
     }
 
     public async Task<ResponseData<ListModel<Clothes>>> GetClothesListAsync()

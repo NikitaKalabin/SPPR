@@ -55,7 +55,7 @@ namespace WEB_253503_KALABIN.API.Controllers
         }
         
         [HttpGet("categories/{category}")]
-        public async Task<ActionResult<ResponseData<ListModel<Clothes>>>> GetClothes(string? category, int pageNo = 0, int pageSize = 3)
+        public async Task<ActionResult<ResponseData<ListModel<Clothes>>>> GetClothes(string? category, int pageNo = 1, int pageSize = 3)
         {
             if (category == "all") {
                 category = null;

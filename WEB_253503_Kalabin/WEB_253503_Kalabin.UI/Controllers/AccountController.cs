@@ -38,12 +38,12 @@ public class AccountController : Controller
         return View(user);
     }
     
-    public IActionResult Login()
-    {
-        return View(new LoginUserViewModel());
-    }
+    // public IActionResult Login()
+    // {
+    //     return View(new LoginUserViewModel());
+    // }
     
-    public async Task LoginHandler()
+    public async Task Login()
     {
         await HttpContext.ChallengeAsync(OpenIdConnectDefaults.AuthenticationScheme, 
             new AuthenticationProperties

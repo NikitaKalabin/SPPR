@@ -86,7 +86,7 @@ public class PagerTagHelper : TagHelper
 
         string? url = _linkGenerator.GetPathByAction(
             action: "Index",
-            controller: "Shows",
+            controller: "Clothes",
             values: values,
             httpContext: httpContext);
 
