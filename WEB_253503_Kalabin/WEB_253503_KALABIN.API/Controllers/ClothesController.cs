@@ -42,7 +42,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // PUT: api/Clothes/5
         [HttpPut("{id}")]
-        [Authorize(Roles = "POWER_USER")]
+        [Authorize(Roles = "POWER-USER")]
         public async Task<IActionResult> PutClothes(int id, Clothes clothes)
         {
             if (id != clothes.Id)
@@ -65,7 +65,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // POST: api/Clothes
         [HttpPost]
-        [Authorize(Roles = "POWER_USER")]
+        [Authorize(Roles = "POWER-USER")]
         public async Task<ActionResult<Clothes>> PostClothes(Clothes clothes)
         {
             var result = await _clothesService.CreateClothesAsync(clothes);
@@ -74,7 +74,7 @@ namespace WEB_253503_KALABIN.API.Controllers
 
         // DELETE: api/Clothes/5
         [HttpDelete("{id}")]
-        [Authorize(Roles = "POWER_USER")]
+        [Authorize(Roles = "POWER-USER")]
         public async Task<IActionResult> DeleteClothes(int id)
         {
             await _clothesService.DeleteClothesAsync(id);

@@ -11,6 +11,10 @@
 <div class="navbar-nav">
     <a asp-controller="Home" asp-action="Index" class="nav-item nav-link @(controller=="home"?"active":"")">Лб 1</a>
     <a asp-controller="Clothes" asp-action="Index" class="nav-item nav-link @(controller=="shows"?"active":"")">Каталог</a>
-    <a asp-area="Admin" asp-page="/Index" class="nav-item nav-link @(controller=="Admin"?"active":"")">Администрирование</a>
+    @if (User.IsInRole("POWER-USER"))
+    {
+        <a asp-area="Admin" asp-page="/Index" class="nav-item nav-link @(controller=="Admin"?"active":"")">Администрирование</a>
+
+    }
 </div>
 <!-- меню сайта - конец -->

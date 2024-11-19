@@ -21,7 +21,7 @@ public class CategoryService : ICategoryService
 
     public async Task<ResponseData<List<Category>>> GetCategoryListAsync()
     {
-        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
+        //await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.GetFromJsonAsync<ResponseData<List<Category>>>($"{_httpClient.BaseAddress!.AbsoluteUri}Category");
             return response ?? ResponseData<List<Category>>.Error("Failed to fetch categories.");
     }

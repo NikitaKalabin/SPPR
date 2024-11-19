@@ -1,6 +1,11 @@
-@model dynamic 
+@model WEB_253503_Kalabin.Domain.Models.Cart
+
+@{
+    var totalCount = Model?.Count ?? 0;
+    var totalPrice = Model?.TotalPrice ?? 0.0;
+}
 
 <!-- Информация пользователя -->
-<a asp-action="Index" class="navbar-text ms-auto">@Model.TotalPrice руб
-    <i class="fa-solid fa-cart-shopping"></i> (@Model.ItemsCount)
+<a asp-controller="Cart" asp-action="Index" class="navbar-text ms-auto">@totalPrice руб
+    <i class="fa-solid fa-cart-shopping"></i> (@totalCount)
 </a>

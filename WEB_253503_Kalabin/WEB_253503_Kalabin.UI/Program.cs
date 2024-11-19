@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using WEB_253503_Kalabin.Domain.Models;
 using WEB_253503_Kalabin.UI;
 using WEB_253503_Kalabin.UI.Extensions;
 using WEB_253503_Kalabin.UI.HelperClasses;
+using WEB_253503_Kalabin.UI.Models;
 using WEB_253503_Kalabin.UI.Services.Authentication;
 using WEB_253503_Kalabin.UI.Services.CategoryService;
 using WEB_253503_Kalabin.UI.Services.ClothesService;
@@ -16,11 +18,15 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.RegisterCustomServices();
 builder.Services.AddHttpContextAccessor();
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession();
 
 var uriData = new UriData
 {
     ApiUri = builder.Configuration.GetSection("UriData").GetValue<string>("ApiUri")!
 };
+
+builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
 
 builder.Services.AddHttpClient<ITokenAccessor, KeycloakTokenAccessor>();
 
@@ -73,6 +79,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

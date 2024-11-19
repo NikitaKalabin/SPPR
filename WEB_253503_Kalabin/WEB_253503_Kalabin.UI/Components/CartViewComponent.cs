@@ -1,17 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
+using WEB_253503_Kalabin.Domain.Models;
+
 namespace WEB_253503_Kalabin.UI.Components;
 
-public class Cart : ViewComponent
+public class CartViewComponent : ViewComponent
 {
+    private readonly Cart _cart;
+
+    public CartViewComponent(Cart cart)
+    {
+        _cart = cart;
+    }
+
     public IViewComponentResult Invoke()
     {
-        var cartInfo = new
-        {
-            TotalPrice = 0.0,
-            ItemsCount = 0
-        };
-
-        return View(cartInfo);
+        return View(_cart);
     }
 }
 
