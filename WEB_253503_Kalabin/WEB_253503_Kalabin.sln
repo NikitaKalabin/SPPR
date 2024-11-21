@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253503_Kalabin.Tests", "WEB_253503_Kalabin.Tests\WEB_253503_Kalabin.Tests.csproj", "{D037F5A8-ACEF-4AE6-B984-6624CF7E61B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,5 +31,9 @@ Global
 		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADF54CF6-9C39-47D8-A2FC-5A1928E13EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D037F5A8-ACEF-4AE6-B984-6624CF7E61B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D037F5A8-ACEF-4AE6-B984-6624CF7E61B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D037F5A8-ACEF-4AE6-B984-6624CF7E61B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D037F5A8-ACEF-4AE6-B984-6624CF7E61B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

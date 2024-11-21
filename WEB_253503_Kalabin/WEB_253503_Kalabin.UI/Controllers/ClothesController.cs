@@ -7,11 +7,11 @@ using WEB_253503_Kalabin.UI.Services.ClothesService;
 
 namespace WEB_253503_Kalabin.UI.Controllers;
 
-public class ClothesController: Controller
+public class ClothesController : Controller
 {
     private IClothesService _clothesService;
     private ICategoryService _categoryService;
-    
+
     public ClothesController(IClothesService clothesService, ICategoryService categoryService)
     {
         _clothesService = clothesService;
@@ -21,35 +21,51 @@ public class ClothesController: Controller
     [Route("catalog/{category?}")]
     public async Task<IActionResult> Index(string? category, int pageNo = 1)
     {
-        var categoryResponse = await _categoryService.GetCategoryListAsync();
-        var clothesResponse = await _clothesService.GetClothesListAsync(category, pageNo);
-
-        if (!clothesResponse.Successfull) return NotFound(clothesResponse.ErrorMessage);
-        if (!categoryResponse.Successfull) return NotFound(categoryResponse.ErrorMessage);
-        
-        var request = HttpContext.Request;
-        string currentCategoryNormalizedName = request.Query["category"].ToString();
-
-        ViewData["categories"] = categoryResponse.Data;
-
-        if (string.IsNullOrEmpty(category))
+        try
         {
-            ViewData["currentCategory"] = "Все";
-        }
-        else
-        {
-            ViewData["currentCategoryNormalizedName"] = currentCategoryNormalizedName;
-            if (categoryResponse.Data!.Find(g => g.NormalizedName == category) is null)
+            var categoryResponse = await _categoryService.GetCategoryListAsync();
+            if (!categoryResponse.Successfull)
             {
-                return NotFound("No genre with this name.");
+                return NotFound(categoryResponse.ErrorMessage);
             }
-            ViewData["currentCategory"] = categoryResponse.Data!.Find(g => g.NormalizedName == category)!.Name;
+
+            var clothesResponse = await _clothesService.GetClothesListAsync(category, pageNo);
+            if (!clothesResponse.Successfull)
+            {
+                return NotFound(clothesResponse.ErrorMessage);
+            }
+
+            var request = HttpContext.Request;
+            string currentCategoryNormalizedName = request.Query["category"].ToString();
+
+            ViewData["categories"] = categoryResponse.Data;
+
+            if (string.IsNullOrEmpty(category))
+            {
+                ViewData["currentCategory"] = "Все";
+            }
+            else
+            {
+                ViewData["currentCategoryNormalizedName"] = currentCategoryNormalizedName;
+                if (categoryResponse.Data!.Find(g => g.NormalizedName == category) is null)
+                {
+                    return NotFound("No genre with this name.");
+                }
+
+                ViewData["currentCategory"] = categoryResponse.Data!.Find(g => g.NormalizedName == category)!.Name;
+            }
+
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml",
+                    clothesResponse.Data);
+            }
+
+            return View(clothesResponse.Data);
         }
-        
-        if (Request.IsAjaxRequest()){
-            return PartialView("~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml", clothesResponse.Data);
+        catch (Exception ex)
+        {
+            return StatusCode(500, "An error occurred while processing your request.");
         }
-        
-        return View(clothesResponse.Data);
     }
 }
