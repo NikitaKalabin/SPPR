@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Serilog;
 using WEB_253503_Kalabin.Domain.Models;
 using WEB_253503_Kalabin.UI;
 using WEB_253503_Kalabin.UI.Extensions;
 using WEB_253503_Kalabin.UI.HelperClasses;
+using WEB_253503_Kalabin.UI.Middleware;
 using WEB_253503_Kalabin.UI.Models;
 using WEB_253503_Kalabin.UI.Services.Authentication;
 using WEB_253503_Kalabin.UI.Services.CategoryService;
@@ -63,6 +65,16 @@ builder.Services
         }
     );
 
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddSerilog();
+builder.Host.UseSerilog();
+
+Log.Logger.Information("[Started logging...]");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,6 +84,9 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseMiddleware<LoggerMiddleware>();
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
