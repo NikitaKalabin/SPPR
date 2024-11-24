@@ -1,0 +1,48 @@
+@using WEB_253503_Kalabin_Blazor.Wasm.Services
+@using WEB_253503_Kalabin.Domain.Entities
+@implements IDisposable
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        @(ClothesService?.SelectedCategory == null ? "All" : ClothesService.SelectedCategory.Name)
+    </button>
+    <ul class="dropdown-menu">
+        <li><span class="dropdown-item" href="#" @onclick="(() => SetCurrentCategory(null))">All</span></li>
+        @if (ClothesService?.Categories != null)
+        {
+            @foreach (var category in ClothesService.Categories)
+            {
+                <li><span class="dropdown-item" @onclick="(() => SetCurrentCategory(category))">@category.Name</span></li>
+            }
+        }
+    </ul>
+</div>
+
+@code {
+    [Parameter] public IBlazorClothesService? ClothesService { get; set; }
+
+    private async void SetCurrentCategory(Category? category)
+    {
+        if (ClothesService != null)
+        {
+            ClothesService.SelectedCategory = category;
+            await ClothesService.GetClothesListAsync();
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        if (ClothesService != null)
+        {
+            ClothesService.DataLoaded += StateHasChanged;
+        }
+    }
+
+    public void Dispose()
+    {
+        if (ClothesService != null)
+        {
+            ClothesService.DataLoaded -= StateHasChanged;
+        }
+    }
+}

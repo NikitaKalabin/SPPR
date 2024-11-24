@@ -49,7 +49,7 @@ public class ClothesController : Controller
                 ViewData["currentCategoryNormalizedName"] = currentCategoryNormalizedName;
                 if (categoryResponse.Data!.Find(g => g.NormalizedName == category) is null)
                 {
-                    return NotFound("No genre with this name.");
+                    return NotFound("No category with this name.");
                 }
 
                 ViewData["currentCategory"] = categoryResponse.Data!.Find(g => g.NormalizedName == category)!.Name;

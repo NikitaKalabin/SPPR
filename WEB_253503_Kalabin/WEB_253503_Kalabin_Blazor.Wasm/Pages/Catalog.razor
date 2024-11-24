@@ -1,0 +1,31 @@
+@page "/catalog"
+@using Microsoft.AspNetCore.Authorization
+@using WEB_253503_Kalabin_Blazor.Wasm.Services
+@using WEB_253503_Kalabin.Domain.Entities
+@attribute [Authorize]
+
+<h3>Catalog</h3>
+
+<CategorySelector ClothesService="ClothesService"></CategorySelector>
+<CatalogList ClothesService="ClothesService" ClothesSelected="SelectClothe"></CatalogList>
+<Paginator BalazorClothesService="ClothesService"></Paginator>
+<ClothesInfo Clothes="Clothes"></ClothesInfo>
+
+@code {
+    [Inject]
+    public IBlazorClothesService ClothesService { get; set; }
+    
+    public Clothes? Clothes { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await ClothesService.GetCategoryListAsync();
+        await ClothesService.GetClothesListAsync();
+    }
+    
+    public void SelectClothe(Clothes? clothes)
+    {
+        Clothes = clothes;
+        StateHasChanged();
+    }
+}

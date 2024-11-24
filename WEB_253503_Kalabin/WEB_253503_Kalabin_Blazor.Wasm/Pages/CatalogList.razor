@@ -1,0 +1,47 @@
+@using WEB_253503_Kalabin_Blazor.Wasm.Services
+@using WEB_253503_Kalabin.Domain.Entities
+@implements IDisposable
+
+@if (ClothesService.Clothes == null)
+{
+    <p>@ClothesService.ErrorMessage</p>
+    <p>Loading...</p>
+}
+else if (!ClothesService.Clothes.Any())
+{
+    <p>No items available.</p>
+}
+else
+{
+    <table>
+        @foreach (var clothes in ClothesService.Clothes)
+        {
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse">@clothes.Name</td>
+                <td style="border: 1px solid black; border-collapse: collapse">@clothes.Description</td>
+                <td><button type="button" class="btn btn-outline-info" @onclick="() => SelectClothes(clothes)">More info</button></td>
+            </tr>
+        }
+    </table>
+}
+
+@code {
+    [Parameter] public IBlazorClothesService? ClothesService { get; set; }
+
+    [Parameter] public EventCallback<Clothes> ClothesSelected { get; set; }
+
+    private void SelectClothes(Clothes clothes)
+    {
+        ClothesSelected.InvokeAsync(clothes);
+    }
+
+    protected override void OnInitialized()
+    {
+        ClothesService.DataLoaded += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        ClothesService.DataLoaded -= StateHasChanged;
+    }
+}

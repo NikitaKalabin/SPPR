@@ -22,6 +22,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<ICategoryService, ApiCategoryService>();
 builder.Services.AddScoped<IClothesService, ApiClothesService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", policy =>
+    {
+        policy.WithOrigins("https://localhost:7269") 
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 var authServer = builder.Configuration
     .GetSection("AuthServer")
     .Get<AuthServerData>();
@@ -50,7 +60,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("AllowSpecificOrigins");
 //await DbInitializer.SeedData(app);
 
 app.UseHttpsRedirection();

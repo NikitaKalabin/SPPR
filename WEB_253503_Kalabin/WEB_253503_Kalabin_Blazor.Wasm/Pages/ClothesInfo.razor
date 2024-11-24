@@ -1,0 +1,18 @@
+@using WEB_253503_Kalabin.Domain.Entities
+
+@if (Clothes != null)
+{
+    <div class="card" style="width: 20%;">
+        <img class="card-img-top" src="@(Clothes.Image)"/>
+        <div class="card-body">
+            <h5 class="card-title">@Clothes.Name</h5>
+            <span class="badge bg-secondary">$@Clothes.Price</span>
+            <p class="card-text">@Clothes.Description</p>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Clothes? Clothes { get; set; }
+}

@@ -1,0 +1,54 @@
+@using WEB_253503_Kalabin_Blazor.Wasm.Services
+@implements IDisposable
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        @if (BalazorClothesService.TotalPages != 1)
+        {
+            @if (BalazorClothesService.CurrentPage != 1)
+            {
+                <li class="page-item">
+                    <span class="page-link" @onclick="(() => SetCurrentPage(--BalazorClothesService.CurrentPage))" aria-label="Next">
+                        <span aria-hidden="true">&laquo;</span>
+                    </span>
+                </li>
+            }
+            @for (int i = 1; i < BalazorClothesService.TotalPages + 1; i++)
+            {
+                int temp = i;
+                <li class="page-item @(BalazorClothesService.CurrentPage == temp ? "active" : "")"><span class="page-link" @onclick="(() => SetCurrentPage(temp))">@(temp)</span></li>
+            }
+            @if (BalazorClothesService.CurrentPage != BalazorClothesService.TotalPages)
+            {
+                <li class="page-item">
+                    <span class="page-link" @onclick="(() => SetCurrentPage(++BalazorClothesService.CurrentPage))" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </span>
+                </li>
+            }
+        }
+    </ul>
+</nav>
+
+@code {
+    [Parameter]
+    public IBlazorClothesService BalazorClothesService { get; set; }
+    
+    public async void SetCurrentPage(int page)
+    {
+        if (BalazorClothesService != null)
+        {
+            await BalazorClothesService.GetClothesListAsync(page);
+        }
+    }
+    
+    protected override void OnInitialized()
+    {
+        BalazorClothesService.DataLoaded += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        BalazorClothesService.DataLoaded -= StateHasChanged;
+    }
+}
