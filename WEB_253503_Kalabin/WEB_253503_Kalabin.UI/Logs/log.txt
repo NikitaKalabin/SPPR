@@ -145,3 +145,987 @@
 2024-11-21 16:49:09.934 +03:00 [INF] Response: GET /catalog responded with 200
 2024-11-21 16:49:09.934 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 35.1801ms
 2024-11-21 16:49:28.557 +03:00 [INF] Application is shutting down...
+2024-11-21 19:11:27.470 +03:00 [INF] [Started logging...]
+2024-11-21 19:11:27.571 +03:00 [INF] User profile is available. Using '/Users/nikitakalabin/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-11-21 19:11:27.906 +03:00 [INF] Now listening on: https://localhost:7170
+2024-11-21 19:11:27.907 +03:00 [INF] Now listening on: http://localhost:5068
+2024-11-21 19:11:27.908 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-21 19:11:27.909 +03:00 [INF] Hosting environment: Development
+2024-11-21 19:11:27.909 +03:00 [INF] Content root path: /Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI
+2024-11-21 19:11:28.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/ - null null
+2024-11-21 19:11:28.139 +03:00 [INF] Request: GET /
+2024-11-21 19:11:28.152 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:28.165 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WEB_253503_Kalabin.UI.Controllers.Home (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:28.170 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:28.174 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5294ms.
+2024-11-21 19:11:28.183 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:28.302 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:28.325 +03:00 [INF] Executed ViewResult - view Index executed in 145.527ms.
+2024-11-21 19:11:28.329 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI) in 163.3177ms
+2024-11-21 19:11:28.329 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:28.335 +03:00 [INF] HTTP GET / responded 200 in 193.2760 ms
+2024-11-21 19:11:28.336 +03:00 [INF] Response: GET / responded with 200
+2024-11-21 19:11:28.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/ - 200 null text/html; charset=utf-8 236.5127ms
+2024-11-21 19:11:29.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:11:29.840 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:29.842 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:29.854 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:29.868 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:29.877 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:29.880 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:30.966 +03:00 [INF] Received HTTP response headers after 1084.0455ms - 200
+2024-11-21 19:11:30.966 +03:00 [INF] End processing HTTP request after 1093.3527ms - 200
+2024-11-21 19:11:30.987 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:30.987 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:31.100 +03:00 [INF] Received HTTP response headers after 112.7602ms - 200
+2024-11-21 19:11:31.100 +03:00 [INF] End processing HTTP request after 113.3828ms - 200
+2024-11-21 19:11:31.115 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1247.1235ms.
+2024-11-21 19:11:31.119 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:31.143 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:31.146 +03:00 [INF] Executed ViewResult - view Index executed in 28.2222ms.
+2024-11-21 19:11:31.146 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 1291.9677ms
+2024-11-21 19:11:31.146 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:31.146 +03:00 [INF] HTTP GET /catalog responded 200 in 1305.8265 ms
+2024-11-21 19:11:31.147 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:31.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 1308.9791ms
+2024-11-21 19:11:33.670 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:11:33.687 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:33.689 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:33.690 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:33.696 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:33.697 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:33.697 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:33.743 +03:00 [INF] Received HTTP response headers after 46.3319ms - 200
+2024-11-21 19:11:33.743 +03:00 [INF] End processing HTTP request after 46.9176ms - 200
+2024-11-21 19:11:33.744 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:11:33.744 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:11:33.747 +03:00 [INF] Received HTTP response headers after 3.0044ms - 200
+2024-11-21 19:11:33.747 +03:00 [INF] End processing HTTP request after 3.2556ms - 200
+2024-11-21 19:11:33.747 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 50.8412ms.
+2024-11-21 19:11:33.749 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:33.750 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 2.0225ms.
+2024-11-21 19:11:33.750 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 60.694ms
+2024-11-21 19:11:33.751 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:33.751 +03:00 [INF] HTTP GET /catalog responded 200 in 62.9398 ms
+2024-11-21 19:11:33.751 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:33.751 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 81.5449ms
+2024-11-21 19:11:33.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:11:33.754 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:33.754 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:33.754 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:33.755 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:33.756 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:33.756 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:33.759 +03:00 [INF] Received HTTP response headers after 3.6164ms - 200
+2024-11-21 19:11:33.759 +03:00 [INF] End processing HTTP request after 3.884ms - 200
+2024-11-21 19:11:33.760 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:11:33.760 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:11:33.762 +03:00 [INF] Received HTTP response headers after 2.4111ms - 200
+2024-11-21 19:11:33.762 +03:00 [INF] End processing HTTP request after 2.6678ms - 200
+2024-11-21 19:11:33.763 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 7.0154ms.
+2024-11-21 19:11:33.763 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:33.763 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.5722ms.
+2024-11-21 19:11:33.763 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 8.945ms
+2024-11-21 19:11:33.764 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:33.764 +03:00 [INF] HTTP GET /catalog responded 200 in 9.3212 ms
+2024-11-21 19:11:33.764 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:33.764 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 10.2442ms
+2024-11-21 19:11:34.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:11:34.618 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:34.621 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:34.621 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:34.624 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:34.625 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:34.625 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:34.629 +03:00 [INF] Received HTTP response headers after 4.6092ms - 200
+2024-11-21 19:11:34.630 +03:00 [INF] End processing HTTP request after 4.942ms - 200
+2024-11-21 19:11:34.630 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:11:34.630 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:11:34.632 +03:00 [INF] Received HTTP response headers after 2.219ms - 200
+2024-11-21 19:11:34.632 +03:00 [INF] End processing HTTP request after 2.4749ms - 200
+2024-11-21 19:11:34.633 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 7.9956ms.
+2024-11-21 19:11:34.633 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:34.635 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 2.1555ms.
+2024-11-21 19:11:34.635 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 11.2189ms
+2024-11-21 19:11:34.635 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:34.635 +03:00 [INF] HTTP GET /catalog responded 200 in 15.8751 ms
+2024-11-21 19:11:34.635 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:34.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 22.6967ms
+2024-11-21 19:11:35.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - null null
+2024-11-21 19:11:35.264 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:35.264 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:35.265 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:35.268 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:35.272 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:35.273 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:35.283 +03:00 [INF] Received HTTP response headers after 10.4082ms - 200
+2024-11-21 19:11:35.283 +03:00 [INF] End processing HTTP request after 11.2482ms - 200
+2024-11-21 19:11:35.284 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:35.284 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:35.287 +03:00 [INF] Received HTTP response headers after 2.7115ms - 200
+2024-11-21 19:11:35.287 +03:00 [INF] End processing HTTP request after 2.9541ms - 200
+2024-11-21 19:11:35.287 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 18.5438ms.
+2024-11-21 19:11:35.287 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:35.288 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 1.0454ms.
+2024-11-21 19:11:35.288 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 22.9162ms
+2024-11-21 19:11:35.288 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:35.288 +03:00 [INF] HTTP GET /catalog responded 200 in 24.6358 ms
+2024-11-21 19:11:35.289 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:35.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - 200 null text/html; charset=utf-8 27.7696ms
+2024-11-21 19:11:37.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:11:37.180 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:37.183 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:37.183 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:37.187 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:37.188 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:37.191 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:37.199 +03:00 [INF] Received HTTP response headers after 7.4718ms - 200
+2024-11-21 19:11:37.199 +03:00 [INF] End processing HTTP request after 10.874ms - 200
+2024-11-21 19:11:37.200 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:11:37.200 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:11:37.202 +03:00 [INF] Received HTTP response headers after 2.7952ms - 200
+2024-11-21 19:11:37.203 +03:00 [INF] End processing HTTP request after 3.0143ms - 200
+2024-11-21 19:11:37.203 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 14.8074ms.
+2024-11-21 19:11:37.203 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:37.204 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 1.0509ms.
+2024-11-21 19:11:37.204 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 19.3951ms
+2024-11-21 19:11:37.204 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:37.204 +03:00 [INF] HTTP GET /catalog responded 200 in 22.5278 ms
+2024-11-21 19:11:37.204 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:37.205 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 27.2487ms
+2024-11-21 19:11:38.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - null null
+2024-11-21 19:11:38.130 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:38.131 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:38.132 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:38.136 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:38.136 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:38.137 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:38.151 +03:00 [INF] Received HTTP response headers after 13.9727ms - 200
+2024-11-21 19:11:38.151 +03:00 [INF] End processing HTTP request after 14.5172ms - 200
+2024-11-21 19:11:38.151 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:38.151 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:38.155 +03:00 [INF] Received HTTP response headers after 3.8073ms - 200
+2024-11-21 19:11:38.155 +03:00 [INF] End processing HTTP request after 4.1282ms - 200
+2024-11-21 19:11:38.156 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 19.5473ms.
+2024-11-21 19:11:38.156 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:11:38.157 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 1.1167ms.
+2024-11-21 19:11:38.157 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 24.6867ms
+2024-11-21 19:11:38.157 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:38.157 +03:00 [INF] HTTP GET /catalog responded 200 in 26.8585 ms
+2024-11-21 19:11:38.157 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:38.158 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - 200 null text/html; charset=utf-8 30.6968ms
+2024-11-21 19:11:41.577 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog/jeans - null null
+2024-11-21 19:11:41.578 +03:00 [INF] Request: GET /catalog/jeans
+2024-11-21 19:11:41.578 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:41.578 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:41.579 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:41.579 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:41.579 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:41.581 +03:00 [INF] Received HTTP response headers after 2.1787ms - 200
+2024-11-21 19:11:41.581 +03:00 [INF] End processing HTTP request after 2.4189ms - 200
+2024-11-21 19:11:41.582 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/jeans/?pageno=1&?pagesize=3
+2024-11-21 19:11:41.582 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/jeans/?pageno=1&?pagesize=3
+2024-11-21 19:11:41.680 +03:00 [INF] Received HTTP response headers after 97.9254ms - 200
+2024-11-21 19:11:41.680 +03:00 [INF] End processing HTTP request after 98.2547ms - 200
+2024-11-21 19:11:41.681 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 101.6824ms.
+2024-11-21 19:11:41.681 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:41.682 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:41.683 +03:00 [INF] Executed ViewResult - view Index executed in 2.5691ms.
+2024-11-21 19:11:41.683 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 104.8927ms
+2024-11-21 19:11:41.683 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:41.684 +03:00 [INF] HTTP GET /catalog/jeans responded 200 in 105.6505 ms
+2024-11-21 19:11:41.684 +03:00 [INF] Response: GET /catalog/jeans responded with 200
+2024-11-21 19:11:41.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog/jeans - 200 null text/html; charset=utf-8 106.7005ms
+2024-11-21 19:11:42.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog/t-shirts - null null
+2024-11-21 19:11:42.929 +03:00 [INF] Request: GET /catalog/t-shirts
+2024-11-21 19:11:42.929 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:42.929 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:42.929 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:42.930 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:42.930 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:42.932 +03:00 [INF] Received HTTP response headers after 2.6112ms - 200
+2024-11-21 19:11:42.932 +03:00 [INF] End processing HTTP request after 2.8856ms - 200
+2024-11-21 19:11:42.933 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/t-shirts/?pageno=1&?pagesize=3
+2024-11-21 19:11:42.933 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/t-shirts/?pageno=1&?pagesize=3
+2024-11-21 19:11:42.937 +03:00 [INF] Received HTTP response headers after 4.249ms - 200
+2024-11-21 19:11:42.937 +03:00 [INF] End processing HTTP request after 4.4957ms - 200
+2024-11-21 19:11:42.937 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.9ms.
+2024-11-21 19:11:42.938 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:42.938 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:42.939 +03:00 [INF] Executed ViewResult - view Index executed in 1.3346ms.
+2024-11-21 19:11:42.939 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 9.8432ms
+2024-11-21 19:11:42.939 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:42.939 +03:00 [INF] HTTP GET /catalog/t-shirts responded 200 in 10.3827 ms
+2024-11-21 19:11:42.939 +03:00 [INF] Response: GET /catalog/t-shirts responded with 200
+2024-11-21 19:11:42.940 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog/t-shirts - 200 null text/html; charset=utf-8 11.9179ms
+2024-11-21 19:11:44.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog/jackets - null null
+2024-11-21 19:11:44.200 +03:00 [INF] Request: GET /catalog/jackets
+2024-11-21 19:11:44.201 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:44.202 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:44.208 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:44.208 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:44.208 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:44.220 +03:00 [INF] Received HTTP response headers after 11.8193ms - 200
+2024-11-21 19:11:44.220 +03:00 [INF] End processing HTTP request after 12.2452ms - 200
+2024-11-21 19:11:44.221 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/jackets/?pageno=1&?pagesize=3
+2024-11-21 19:11:44.221 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/jackets/?pageno=1&?pagesize=3
+2024-11-21 19:11:44.225 +03:00 [INF] Received HTTP response headers after 3.9476ms - 200
+2024-11-21 19:11:44.225 +03:00 [INF] End processing HTTP request after 4.316ms - 200
+2024-11-21 19:11:44.225 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 17.4402ms.
+2024-11-21 19:11:44.230 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-11-21 19:11:44.230 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 23.4992ms
+2024-11-21 19:11:44.231 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:44.231 +03:00 [INF] HTTP GET /catalog/jackets responded 404 in 30.5003 ms
+2024-11-21 19:11:44.231 +03:00 [INF] Response: GET /catalog/jackets responded with 404
+2024-11-21 19:11:44.231 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog/jackets - 404 null text/plain; charset=utf-8 34.9055ms
+2024-11-21 19:11:47.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog/t-shirts - null null
+2024-11-21 19:11:47.461 +03:00 [INF] Request: GET /catalog/t-shirts
+2024-11-21 19:11:47.462 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:47.463 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:47.473 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:47.473 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:47.473 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:47.478 +03:00 [INF] Received HTTP response headers after 4.8904ms - 200
+2024-11-21 19:11:47.479 +03:00 [INF] End processing HTTP request after 5.2891ms - 200
+2024-11-21 19:11:47.479 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/t-shirts/?pageno=1&?pagesize=3
+2024-11-21 19:11:47.479 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/t-shirts/?pageno=1&?pagesize=3
+2024-11-21 19:11:47.482 +03:00 [INF] Received HTTP response headers after 2.4262ms - 200
+2024-11-21 19:11:47.482 +03:00 [INF] End processing HTTP request after 2.6592ms - 200
+2024-11-21 19:11:47.482 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.5877ms.
+2024-11-21 19:11:47.482 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:47.483 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:47.484 +03:00 [INF] Executed ViewResult - view Index executed in 1.8425ms.
+2024-11-21 19:11:47.484 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 11.735ms
+2024-11-21 19:11:47.484 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:47.484 +03:00 [INF] HTTP GET /catalog/t-shirts responded 200 in 22.5450 ms
+2024-11-21 19:11:47.484 +03:00 [INF] Response: GET /catalog/t-shirts responded with 200
+2024-11-21 19:11:47.485 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog/t-shirts - 200 null text/html; charset=utf-8 27.4506ms
+2024-11-21 19:11:49.530 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog/shorts - null null
+2024-11-21 19:11:49.535 +03:00 [INF] Request: GET /catalog/shorts
+2024-11-21 19:11:49.540 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:49.540 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:49.541 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:49.541 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:49.541 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:49.545 +03:00 [INF] Received HTTP response headers after 4.0002ms - 200
+2024-11-21 19:11:49.545 +03:00 [INF] End processing HTTP request after 4.3969ms - 200
+2024-11-21 19:11:49.546 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/shorts/?pageno=1&?pagesize=3
+2024-11-21 19:11:49.546 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/shorts/?pageno=1&?pagesize=3
+2024-11-21 19:11:49.550 +03:00 [INF] Received HTTP response headers after 3.5889ms - 200
+2024-11-21 19:11:49.550 +03:00 [INF] End processing HTTP request after 3.9264ms - 200
+2024-11-21 19:11:49.550 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.997ms.
+2024-11-21 19:11:49.550 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:49.551 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:49.552 +03:00 [INF] Executed ViewResult - view Index executed in 2.0803ms.
+2024-11-21 19:11:49.552 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 12.0838ms
+2024-11-21 19:11:49.553 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:49.553 +03:00 [INF] HTTP GET /catalog/shorts responded 200 in 13.3167 ms
+2024-11-21 19:11:49.553 +03:00 [INF] Response: GET /catalog/shorts responded with 200
+2024-11-21 19:11:49.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog/shorts - 200 null text/html; charset=utf-8 23.8311ms
+2024-11-21 19:11:50.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:11:50.986 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:11:50.987 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:50.987 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:11:50.994 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:11:50.995 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:50.995 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:11:51.005 +03:00 [INF] Received HTTP response headers after 9.809ms - 200
+2024-11-21 19:11:51.005 +03:00 [INF] End processing HTTP request after 10.2937ms - 200
+2024-11-21 19:11:51.006 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:51.006 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:11:51.008 +03:00 [INF] Received HTTP response headers after 2.2093ms - 200
+2024-11-21 19:11:51.008 +03:00 [INF] End processing HTTP request after 2.4621ms - 200
+2024-11-21 19:11:51.009 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 13.6175ms.
+2024-11-21 19:11:51.009 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:11:51.010 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:11:51.011 +03:00 [INF] Executed ViewResult - view Index executed in 2.5261ms.
+2024-11-21 19:11:51.012 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 22.0295ms
+2024-11-21 19:11:51.012 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:11:51.012 +03:00 [INF] HTTP GET /catalog responded 200 in 25.6862 ms
+2024-11-21 19:11:51.012 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:11:51.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 33.2655ms
+2024-11-21 19:12:11.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/Admin - null null
+2024-11-21 19:12:11.960 +03:00 [INF] Request: GET /Admin
+2024-11-21 19:12:11.960 +03:00 [INF] Executing endpoint '/Index'
+2024-11-21 19:12:11.963 +03:00 [INF] Route matched with {page = "/Index", area = "Admin", action = "", controller = ""}. Executing page /Index
+2024-11-21 19:12:11.965 +03:00 [INF] Executing handler method WEB_253503_Kalabin.UI.Areas.Admin.Pages.IndexModel.OnGetAsync - ModelState is "Valid"
+2024-11-21 19:12:11.968 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes
+2024-11-21 19:12:11.968 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes
+2024-11-21 19:12:12.365 +03:00 [INF] Received HTTP response headers after 397.3001ms - 200
+2024-11-21 19:12:12.365 +03:00 [INF] End processing HTTP request after 397.5463ms - 200
+2024-11-21 19:12:12.368 +03:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-21 19:12:12.371 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-21 19:12:12.371 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-21 19:12:12.391 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:12:12.394 +03:00 [INF] Executed page /Index in 431.4653ms
+2024-11-21 19:12:12.394 +03:00 [INF] Executed endpoint '/Index'
+2024-11-21 19:12:12.394 +03:00 [INF] HTTP GET /Admin responded 200 in 433.9563 ms
+2024-11-21 19:12:12.394 +03:00 [INF] Response: GET /Admin responded with 200
+2024-11-21 19:12:12.394 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/Admin - 200 null text/html; charset=utf-8 435.0506ms
+2024-11-21 19:12:33.543 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/ - null null
+2024-11-21 19:12:33.544 +03:00 [INF] Request: GET /
+2024-11-21 19:12:33.544 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:12:33.545 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WEB_253503_Kalabin.UI.Controllers.Home (WEB_253503_Kalabin.UI).
+2024-11-21 19:12:33.545 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:12:33.545 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0167ms.
+2024-11-21 19:12:33.546 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:12:33.546 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:12:33.547 +03:00 [INF] Executed ViewResult - view Index executed in 1.9373ms.
+2024-11-21 19:12:33.547 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI) in 2.3513ms
+2024-11-21 19:12:33.547 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.Home.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:12:33.547 +03:00 [INF] HTTP GET / responded 200 in 3.0965 ms
+2024-11-21 19:12:33.547 +03:00 [INF] Response: GET / responded with 200
+2024-11-21 19:12:33.547 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/ - 200 null text/html; charset=utf-8 4.0775ms
+2024-11-21 19:12:34.109 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:12:34.112 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:12:34.112 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:12:34.112 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:12:34.115 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:12:34.116 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:12:34.116 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:12:34.144 +03:00 [INF] Received HTTP response headers after 27.6251ms - 200
+2024-11-21 19:12:34.144 +03:00 [INF] End processing HTTP request after 28.4764ms - 200
+2024-11-21 19:12:34.145 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:12:34.147 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:12:34.178 +03:00 [INF] Received HTTP response headers after 23.2094ms - 200
+2024-11-21 19:12:34.178 +03:00 [INF] End processing HTTP request after 33.1405ms - 200
+2024-11-21 19:12:34.179 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 63.044ms.
+2024-11-21 19:12:34.179 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:12:34.181 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:12:34.182 +03:00 [INF] Executed ViewResult - view Index executed in 3.1068ms.
+2024-11-21 19:12:34.182 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 68.321ms
+2024-11-21 19:12:34.182 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:12:34.192 +03:00 [INF] HTTP GET /catalog responded 200 in 80.2643 ms
+2024-11-21 19:12:34.193 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:12:34.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 84.4763ms
+2024-11-21 19:17:42.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:17:42.710 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:17:42.710 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:42.710 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:17:42.711 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:17:42.711 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:42.711 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:42.735 +03:00 [INF] Received HTTP response headers after 24.0241ms - 200
+2024-11-21 19:17:42.735 +03:00 [INF] End processing HTTP request after 24.2765ms - 200
+2024-11-21 19:17:42.735 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:17:42.735 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:17:42.749 +03:00 [INF] Received HTTP response headers after 13.2753ms - 200
+2024-11-21 19:17:42.749 +03:00 [INF] End processing HTTP request after 13.4606ms - 200
+2024-11-21 19:17:42.749 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 38.2558ms.
+2024-11-21 19:17:42.749 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:17:42.750 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.5782ms.
+2024-11-21 19:17:42.750 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 39.4584ms
+2024-11-21 19:17:42.750 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:42.750 +03:00 [INF] HTTP GET /catalog responded 200 in 39.8824 ms
+2024-11-21 19:17:42.750 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:17:42.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 42.4511ms
+2024-11-21 19:17:42.752 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:17:42.753 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:17:42.753 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:42.753 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:17:42.753 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:17:42.753 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:42.753 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:42.755 +03:00 [INF] Received HTTP response headers after 1.6068ms - 200
+2024-11-21 19:17:42.755 +03:00 [INF] End processing HTTP request after 1.8077ms - 200
+2024-11-21 19:17:42.755 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:17:42.755 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:17:42.758 +03:00 [INF] Received HTTP response headers after 2.4653ms - 200
+2024-11-21 19:17:42.758 +03:00 [INF] End processing HTTP request after 2.6542ms - 200
+2024-11-21 19:17:42.758 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 4.8117ms.
+2024-11-21 19:17:42.758 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:17:42.759 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.4559ms.
+2024-11-21 19:17:42.759 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 5.7484ms
+2024-11-21 19:17:42.759 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:42.759 +03:00 [INF] HTTP GET /catalog responded 200 in 6.0982 ms
+2024-11-21 19:17:42.759 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:17:42.759 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 6.8242ms
+2024-11-21 19:17:43.643 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:17:43.645 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:17:43.646 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:43.646 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:17:43.648 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:17:43.648 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:43.648 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:43.666 +03:00 [INF] Received HTTP response headers after 18.0277ms - 200
+2024-11-21 19:17:43.666 +03:00 [INF] End processing HTTP request after 18.4769ms - 200
+2024-11-21 19:17:43.667 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:17:43.667 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:17:43.669 +03:00 [INF] Received HTTP response headers after 2.5533ms - 200
+2024-11-21 19:17:43.670 +03:00 [INF] End processing HTTP request after 2.8311ms - 200
+2024-11-21 19:17:43.670 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 22.2011ms.
+2024-11-21 19:17:43.670 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:17:43.671 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.7505ms.
+2024-11-21 19:17:43.671 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 24.8113ms
+2024-11-21 19:17:43.671 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:43.671 +03:00 [INF] HTTP GET /catalog responded 200 in 25.8503 ms
+2024-11-21 19:17:43.671 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:17:43.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 29.4729ms
+2024-11-21 19:17:45.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - null null
+2024-11-21 19:17:45.061 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:17:45.061 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:45.061 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:17:45.070 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:17:45.071 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:45.071 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:17:45.075 +03:00 [INF] Received HTTP response headers after 3.9091ms - 200
+2024-11-21 19:17:45.075 +03:00 [INF] End processing HTTP request after 4.3593ms - 200
+2024-11-21 19:17:45.075 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:17:45.075 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:17:45.078 +03:00 [INF] Received HTTP response headers after 2.0749ms - 200
+2024-11-21 19:17:45.078 +03:00 [INF] End processing HTTP request after 2.4211ms - 200
+2024-11-21 19:17:45.078 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 7.5502ms.
+2024-11-21 19:17:45.078 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:17:45.079 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.9574ms.
+2024-11-21 19:17:45.079 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 9.9553ms
+2024-11-21 19:17:45.080 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:17:45.080 +03:00 [INF] HTTP GET /catalog responded 200 in 18.8792 ms
+2024-11-21 19:17:45.080 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:17:45.080 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - 200 null text/html; charset=utf-8 21.2929ms
+2024-11-21 19:18:06.716 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-11-21 19:18:06.718 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-11-21 19:18:06.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-11-21 19:18:06.726 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css.map
+2024-11-21 19:18:06.747 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map'
+2024-11-21 19:18:06.747 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+2024-11-21 19:18:06.747 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded 200 in 20.9329 ms
+2024-11-21 19:18:06.747 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded 200 in 28.4580 ms
+2024-11-21 19:18:06.747 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded with 200
+2024-11-21 19:18:06.747 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded with 200
+2024-11-21 19:18:06.747 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 23.1266ms
+2024-11-21 19:18:06.747 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 31.148ms
+2024-11-21 19:18:13.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:18:13.128 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:13.129 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:13.129 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:13.129 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:13.129 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:13.129 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:13.132 +03:00 [INF] Received HTTP response headers after 2.4545ms - 200
+2024-11-21 19:18:13.132 +03:00 [INF] End processing HTTP request after 2.7182ms - 200
+2024-11-21 19:18:13.132 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:13.132 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:13.134 +03:00 [INF] Received HTTP response headers after 2.1147ms - 200
+2024-11-21 19:18:13.134 +03:00 [INF] End processing HTTP request after 2.3605ms - 200
+2024-11-21 19:18:13.135 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.5564ms.
+2024-11-21 19:18:13.135 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:18:13.136 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:18:13.136 +03:00 [INF] Executed ViewResult - view Index executed in 1.4157ms.
+2024-11-21 19:18:13.136 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 7.559ms
+2024-11-21 19:18:13.136 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:13.136 +03:00 [INF] HTTP GET /catalog responded 200 in 7.9964 ms
+2024-11-21 19:18:13.137 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:13.137 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 9.621ms
+2024-11-21 19:18:13.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-11-21 19:18:13.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - null null
+2024-11-21 19:18:13.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - null null
+2024-11-21 19:18:13.153 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css
+2024-11-21 19:18:13.153 +03:00 [INF] Request: GET /lib/font-awesome/css/all.min.css
+2024-11-21 19:18:13.153 +03:00 [INF] Request: GET /css/site.css
+2024-11-21 19:18:13.155 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/css/site.css'
+2024-11-21 19:18:13.155 +03:00 [INF] HTTP GET /css/site.css responded 200 in 1.2912 ms
+2024-11-21 19:18:13.155 +03:00 [INF] Response: GET /css/site.css responded with 200
+2024-11-21 19:18:13.155 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/css/all.min.css'
+2024-11-21 19:18:13.155 +03:00 [INF] HTTP GET /lib/font-awesome/css/all.min.css responded 200 in 2.1342 ms
+2024-11-21 19:18:13.155 +03:00 [INF] Response: GET /lib/font-awesome/css/all.min.css responded with 200
+2024-11-21 19:18:13.156 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - 200 96518 text/css 2.7864ms
+2024-11-21 19:18:13.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - 200 380 text/css 2.8042ms
+2024-11-21 19:18:13.156 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2024-11-21 19:18:13.156 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 3.2976 ms
+2024-11-21 19:18:13.156 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css responded with 200
+2024-11-21 19:18:13.157 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 5.2952ms
+2024-11-21 19:18:13.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - null null
+2024-11-21 19:18:13.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js - null null
+2024-11-21 19:18:13.196 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:18:13.197 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:18:13.197 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - null null
+2024-11-21 19:18:13.198 +03:00 [INF] Request: GET /lib/jquery/dist/jquery.min.js
+2024-11-21 19:18:13.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-11-21 19:18:13.197 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:18:13.198 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - null null
+2024-11-21 19:18:13.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-11-21 19:18:13.205 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-brands-400.woff2
+2024-11-21 19:18:13.205 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css.map
+2024-11-21 19:18:13.197 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-11-21 19:18:13.206 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+2024-11-21 19:18:13.200 +03:00 [INF] HTTP GET /js/site.js responded 200 in 3.3962 ms
+2024-11-21 19:18:13.206 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:18:13.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - 200 749 text/javascript 11.0608ms
+2024-11-21 19:18:13.198 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-solid-900.woff2
+2024-11-21 19:18:13.203 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:18:13.210 +03:00 [INF] HTTP GET /js/site.js responded 200 in 13.5943 ms
+2024-11-21 19:18:13.210 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:18:13.210 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js - 200 749 text/javascript 14.9369ms
+2024-11-21 19:18:13.211 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/jquery/dist/jquery.min.js'
+2024-11-21 19:18:13.211 +03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 13.2171 ms
+2024-11-21 19:18:13.212 +03:00 [INF] Response: GET /lib/jquery/dist/jquery.min.js responded with 200
+2024-11-21 19:18:13.212 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 15.4874ms
+2024-11-21 19:18:13.215 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-brands-400.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-brands-400.woff2'
+2024-11-21 19:18:13.215 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2024-11-21 19:18:13.215 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded 200 in 10.2123 ms
+2024-11-21 19:18:13.215 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-solid-900.woff2'
+2024-11-21 19:18:13.215 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 9.1463 ms
+2024-11-21 19:18:13.215 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded with 200
+2024-11-21 19:18:13.215 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded 200 in 6.0691 ms
+2024-11-21 19:18:13.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - 200 118072 font/woff2 17.1298ms
+2024-11-21 19:18:13.215 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded with 200
+2024-11-21 19:18:13.216 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded with 200
+2024-11-21 19:18:13.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 18.7475ms
+2024-11-21 19:18:13.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - 200 157192 font/woff2 19.4178ms
+2024-11-21 19:18:13.219 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map'
+2024-11-21 19:18:13.219 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded 200 in 13.3733 ms
+2024-11-21 19:18:13.219 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded with 200
+2024-11-21 19:18:13.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 14.9117ms
+2024-11-21 19:18:13.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-11-21 19:18:13.640 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-11-21 19:18:13.642 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+2024-11-21 19:18:13.642 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded 200 in 1.7536 ms
+2024-11-21 19:18:13.642 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded with 200
+2024-11-21 19:18:13.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 2.9075ms
+2024-11-21 19:18:13.650 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/favicon.ico - null null
+2024-11-21 19:18:13.651 +03:00 [INF] Request: GET /favicon.ico
+2024-11-21 19:18:13.652 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/favicon.ico'
+2024-11-21 19:18:13.652 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 0.8599 ms
+2024-11-21 19:18:13.652 +03:00 [INF] Response: GET /favicon.ico responded with 200
+2024-11-21 19:18:13.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/favicon.ico - 200 5430 image/x-icon 1.7056ms
+2024-11-21 19:18:21.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:18:21.304 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:18:21.306 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:21.307 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:21.307 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:21.305 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:21.308 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:21.308 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:21.308 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:21.316 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:21.316 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:21.316 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:21.316 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:21.317 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:21.320 +03:00 [INF] Received HTTP response headers after 4.1201ms - 200
+2024-11-21 19:18:21.321 +03:00 [INF] End processing HTTP request after 4.7694ms - 200
+2024-11-21 19:18:21.321 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:21.321 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:21.323 +03:00 [INF] Received HTTP response headers after 2.2117ms - 200
+2024-11-21 19:18:21.323 +03:00 [INF] Received HTTP response headers after 6.5395ms - 200
+2024-11-21 19:18:21.323 +03:00 [INF] End processing HTTP request after 2.5165ms - 200
+2024-11-21 19:18:21.323 +03:00 [INF] End processing HTTP request after 6.9874ms - 200
+2024-11-21 19:18:21.324 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 7.9123ms.
+2024-11-21 19:18:21.324 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:21.324 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:21.324 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:21.325 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.6355ms.
+2024-11-21 19:18:21.325 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 17.2522ms
+2024-11-21 19:18:21.325 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:21.325 +03:00 [INF] HTTP GET /catalog responded 200 in 18.6112 ms
+2024-11-21 19:18:21.325 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:21.326 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 24.0815ms
+2024-11-21 19:18:21.327 +03:00 [INF] Received HTTP response headers after 3.3143ms - 200
+2024-11-21 19:18:21.327 +03:00 [INF] End processing HTTP request after 3.818ms - 200
+2024-11-21 19:18:21.328 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 11.2742ms.
+2024-11-21 19:18:21.328 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:21.329 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.6496ms.
+2024-11-21 19:18:21.329 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 13.294ms
+2024-11-21 19:18:21.329 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:21.331 +03:00 [INF] HTTP GET /catalog responded 200 in 23.0498 ms
+2024-11-21 19:18:21.331 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:21.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 29.5987ms
+2024-11-21 19:18:28.376 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:18:28.379 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:28.380 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:28.380 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:28.384 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:28.385 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:28.385 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:28.398 +03:00 [INF] Received HTTP response headers after 13.1831ms - 200
+2024-11-21 19:18:28.399 +03:00 [INF] End processing HTTP request after 13.8878ms - 200
+2024-11-21 19:18:28.399 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:18:28.399 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:18:28.401 +03:00 [INF] Received HTTP response headers after 1.946ms - 200
+2024-11-21 19:18:28.401 +03:00 [INF] End processing HTTP request after 2.1907ms - 200
+2024-11-21 19:18:28.401 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 16.7043ms.
+2024-11-21 19:18:28.402 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:28.402 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.6124ms.
+2024-11-21 19:18:28.402 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 19.0056ms
+2024-11-21 19:18:28.402 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:28.402 +03:00 [INF] HTTP GET /catalog responded 200 in 23.4759 ms
+2024-11-21 19:18:28.404 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:28.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 28.0358ms
+2024-11-21 19:18:36.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:18:36.533 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:36.533 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:36.534 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:36.535 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:36.536 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:36.536 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:36.547 +03:00 [INF] Received HTTP response headers after 11.2087ms - 200
+2024-11-21 19:18:36.548 +03:00 [INF] End processing HTTP request after 12.1169ms - 200
+2024-11-21 19:18:36.548 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:36.548 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:18:36.550 +03:00 [INF] Received HTTP response headers after 1.8727ms - 200
+2024-11-21 19:18:36.550 +03:00 [INF] End processing HTTP request after 2.1071ms - 200
+2024-11-21 19:18:36.550 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 14.6234ms.
+2024-11-21 19:18:36.550 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:36.551 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.4891ms.
+2024-11-21 19:18:36.551 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 16.4298ms
+2024-11-21 19:18:36.551 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:36.551 +03:00 [INF] HTTP GET /catalog responded 200 in 17.7245 ms
+2024-11-21 19:18:36.551 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:36.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 19.5012ms
+2024-11-21 19:18:43.013 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - null null
+2024-11-21 19:18:43.015 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:43.016 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:43.016 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:43.018 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:43.019 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:43.019 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:43.030 +03:00 [INF] Received HTTP response headers after 11.2839ms - 200
+2024-11-21 19:18:43.031 +03:00 [INF] End processing HTTP request after 12.2529ms - 200
+2024-11-21 19:18:43.032 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:43.032 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:43.053 +03:00 [INF] Received HTTP response headers after 5.2912ms - 200
+2024-11-21 19:18:43.053 +03:00 [INF] End processing HTTP request after 21.1813ms - 200
+2024-11-21 19:18:43.053 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 34.8294ms.
+2024-11-21 19:18:43.054 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:43.055 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 1.1299ms.
+2024-11-21 19:18:43.055 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 37.6716ms
+2024-11-21 19:18:43.055 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:43.056 +03:00 [INF] HTTP GET /catalog responded 200 in 40.0800 ms
+2024-11-21 19:18:43.056 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:43.056 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - 200 null text/html; charset=utf-8 43.0458ms
+2024-11-21 19:18:53.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:18:53.230 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:53.231 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:53.231 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:53.232 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:53.232 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:53.232 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:53.239 +03:00 [INF] Received HTTP response headers after 6.6829ms - 200
+2024-11-21 19:18:53.240 +03:00 [INF] End processing HTTP request after 7.2813ms - 200
+2024-11-21 19:18:53.241 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:18:53.241 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:18:53.251 +03:00 [INF] Received HTTP response headers after 5.7737ms - 200
+2024-11-21 19:18:53.251 +03:00 [INF] End processing HTTP request after 10.2981ms - 200
+2024-11-21 19:18:53.251 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 19.4576ms.
+2024-11-21 19:18:53.252 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:18:53.255 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 3.5116ms.
+2024-11-21 19:18:53.255 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 24.0811ms
+2024-11-21 19:18:53.255 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:53.258 +03:00 [INF] HTTP GET /catalog responded 200 in 27.9177 ms
+2024-11-21 19:18:53.258 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:53.259 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 29.6439ms
+2024-11-21 19:18:58.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:18:58.216 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:18:58.217 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:58.217 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:18:58.219 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:18:58.219 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:58.222 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:18:58.243 +03:00 [INF] Received HTTP response headers after 19.9917ms - 200
+2024-11-21 19:18:58.243 +03:00 [INF] End processing HTTP request after 23.9281ms - 200
+2024-11-21 19:18:58.244 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:58.244 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:18:58.250 +03:00 [INF] Received HTTP response headers after 6.3432ms - 200
+2024-11-21 19:18:58.250 +03:00 [INF] End processing HTTP request after 6.5673ms - 200
+2024-11-21 19:18:58.250 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 30.8081ms.
+2024-11-21 19:18:58.250 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:18:58.252 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:18:58.252 +03:00 [INF] Executed ViewResult - view Index executed in 1.6928ms.
+2024-11-21 19:18:58.252 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 34.7165ms
+2024-11-21 19:18:58.252 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:18:58.252 +03:00 [INF] HTTP GET /catalog responded 200 in 35.8002 ms
+2024-11-21 19:18:58.252 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:18:58.253 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 38.2722ms
+2024-11-21 19:18:58.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-11-21 19:18:58.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - null null
+2024-11-21 19:18:58.265 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css
+2024-11-21 19:18:58.266 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - null null
+2024-11-21 19:18:58.271 +03:00 [INF] Request: GET /css/site.css
+2024-11-21 19:18:58.271 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/css/site.css'
+2024-11-21 19:18:58.271 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2024-11-21 19:18:58.272 +03:00 [INF] Request: GET /lib/font-awesome/css/all.min.css
+2024-11-21 19:18:58.272 +03:00 [INF] HTTP GET /css/site.css responded 200 in 1.5331 ms
+2024-11-21 19:18:58.272 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 2.0328 ms
+2024-11-21 19:18:58.273 +03:00 [INF] Response: GET /css/site.css responded with 200
+2024-11-21 19:18:58.273 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css responded with 200
+2024-11-21 19:18:58.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - 200 380 text/css 8.169ms
+2024-11-21 19:18:58.273 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/css/all.min.css'
+2024-11-21 19:18:58.274 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 9.9212ms
+2024-11-21 19:18:58.275 +03:00 [INF] HTTP GET /lib/font-awesome/css/all.min.css responded 200 in 2.4151 ms
+2024-11-21 19:18:58.276 +03:00 [INF] Response: GET /lib/font-awesome/css/all.min.css responded with 200
+2024-11-21 19:18:58.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - 200 96518 text/css 10.1791ms
+2024-11-21 19:18:58.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js - null null
+2024-11-21 19:18:58.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - null null
+2024-11-21 19:18:58.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-11-21 19:18:58.300 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:18:58.300 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - null null
+2024-11-21 19:18:58.301 +03:00 [INF] Request: GET /lib/jquery/dist/jquery.min.js
+2024-11-21 19:18:58.301 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+2024-11-21 19:18:58.301 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:18:58.305 +03:00 [INF] HTTP GET /js/site.js responded 200 in 4.6780 ms
+2024-11-21 19:18:58.302 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:18:58.303 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2024-11-21 19:18:58.303 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/jquery/dist/jquery.min.js'
+2024-11-21 19:18:58.305 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:18:58.306 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:18:58.306 +03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 3.5987 ms
+2024-11-21 19:18:58.305 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 3.1196 ms
+2024-11-21 19:18:58.309 +03:00 [INF] Response: GET /lib/jquery/dist/jquery.min.js responded with 200
+2024-11-21 19:18:58.306 +03:00 [INF] HTTP GET /js/site.js responded 200 in 0.5790 ms
+2024-11-21 19:18:58.306 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js - 200 749 text/javascript 6.2954ms
+2024-11-21 19:18:58.309 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded with 200
+2024-11-21 19:18:58.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 9.101ms
+2024-11-21 19:18:58.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 10.4603ms
+2024-11-21 19:18:58.309 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:18:58.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-11-21 19:18:58.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - 200 749 text/javascript 10.6635ms
+2024-11-21 19:18:58.311 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css.map
+2024-11-21 19:18:58.314 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-11-21 19:18:58.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - null null
+2024-11-21 19:18:58.315 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-solid-900.woff2
+2024-11-21 19:18:58.316 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map'
+2024-11-21 19:18:58.319 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded 200 in 8.0414 ms
+2024-11-21 19:18:58.319 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded with 200
+2024-11-21 19:18:58.319 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 9.4969ms
+2024-11-21 19:18:58.319 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-brands-400.woff2
+2024-11-21 19:18:58.320 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-solid-900.woff2'
+2024-11-21 19:18:58.320 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-brands-400.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-brands-400.woff2'
+2024-11-21 19:18:58.321 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded 200 in 2.0730 ms
+2024-11-21 19:18:58.321 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded 200 in 1.5760 ms
+2024-11-21 19:18:58.321 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded with 200
+2024-11-21 19:18:58.321 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded with 200
+2024-11-21 19:18:58.322 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - 200 118072 font/woff2 7.3984ms
+2024-11-21 19:18:58.322 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - 200 157192 font/woff2 8.1336ms
+2024-11-21 19:18:58.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-11-21 19:18:58.441 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-11-21 19:18:58.443 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+2024-11-21 19:18:58.443 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded 200 in 1.1179 ms
+2024-11-21 19:18:58.443 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded with 200
+2024-11-21 19:18:58.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 1.7038ms
+2024-11-21 19:18:58.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/favicon.ico - null null
+2024-11-21 19:18:58.452 +03:00 [INF] Request: GET /favicon.ico
+2024-11-21 19:18:58.452 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/favicon.ico'
+2024-11-21 19:18:58.453 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 0.4515 ms
+2024-11-21 19:18:58.453 +03:00 [INF] Response: GET /favicon.ico responded with 200
+2024-11-21 19:18:58.453 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/favicon.ico - 200 5430 image/x-icon 0.9702ms
+2024-11-21 19:19:06.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:19:06.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:19:06.148 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:19:06.148 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:19:06.149 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:06.149 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:06.149 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:19:06.149 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:19:06.149 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:19:06.149 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:06.149 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:06.149 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:19:06.150 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:06.150 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:06.153 +03:00 [INF] Received HTTP response headers after 3.3495ms - 200
+2024-11-21 19:19:06.153 +03:00 [INF] Received HTTP response headers after 2.9285ms - 200
+2024-11-21 19:19:06.153 +03:00 [INF] End processing HTTP request after 4.1154ms - 200
+2024-11-21 19:19:06.154 +03:00 [INF] End processing HTTP request after 3.4938ms - 200
+2024-11-21 19:19:06.154 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:06.154 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:06.154 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:06.154 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:06.157 +03:00 [INF] Received HTTP response headers after 3.1851ms - 200
+2024-11-21 19:19:06.157 +03:00 [INF] End processing HTTP request after 3.5955ms - 200
+2024-11-21 19:19:06.158 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 8.2339ms.
+2024-11-21 19:19:06.158 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:19:06.160 +03:00 [INF] Received HTTP response headers after 5.594ms - 200
+2024-11-21 19:19:06.162 +03:00 [INF] End processing HTTP request after 8.3146ms - 200
+2024-11-21 19:19:06.162 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 12.2364ms.
+2024-11-21 19:19:06.162 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:19:06.163 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 4.825ms.
+2024-11-21 19:19:06.163 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.4209ms.
+2024-11-21 19:19:06.169 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 20.4302ms
+2024-11-21 19:19:06.169 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 20.201ms
+2024-11-21 19:19:06.169 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:06.169 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:06.170 +03:00 [INF] HTTP GET /catalog responded 200 in 20.9731 ms
+2024-11-21 19:19:06.170 +03:00 [INF] HTTP GET /catalog responded 200 in 21.2173 ms
+2024-11-21 19:19:06.170 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:19:06.170 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:19:06.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 22.5321ms
+2024-11-21 19:19:06.170 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 22.8001ms
+2024-11-21 19:19:25.079 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog - null null
+2024-11-21 19:19:25.080 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:19:25.080 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:25.081 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:19:25.081 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:19:25.081 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:25.081 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:25.087 +03:00 [INF] Received HTTP response headers after 5.7868ms - 200
+2024-11-21 19:19:25.087 +03:00 [INF] End processing HTTP request after 6.1917ms - 200
+2024-11-21 19:19:25.088 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:19:25.088 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:19:25.091 +03:00 [INF] Received HTTP response headers after 2.8035ms - 200
+2024-11-21 19:19:25.091 +03:00 [INF] End processing HTTP request after 3.3557ms - 200
+2024-11-21 19:19:25.091 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 10.2748ms.
+2024-11-21 19:19:25.092 +03:00 [INF] Executing ViewResult, running view Index.
+2024-11-21 19:19:25.092 +03:00 [INF] Accessing expired session, Key:11d23ff3-7d68-cee1-6b59-e30de9af4d4a
+2024-11-21 19:19:25.093 +03:00 [INF] Executed ViewResult - view Index executed in 1.2368ms.
+2024-11-21 19:19:25.093 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 12.3392ms
+2024-11-21 19:19:25.093 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:25.093 +03:00 [INF] HTTP GET /catalog responded 200 in 12.9968 ms
+2024-11-21 19:19:25.093 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:19:25.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog - 200 null text/html; charset=utf-8 14.6262ms
+2024-11-21 19:19:25.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-11-21 19:19:25.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - null null
+2024-11-21 19:19:25.105 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css
+2024-11-21 19:19:25.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - null null
+2024-11-21 19:19:25.110 +03:00 [INF] Request: GET /css/site.css
+2024-11-21 19:19:25.110 +03:00 [INF] Request: GET /lib/font-awesome/css/all.min.css
+2024-11-21 19:19:25.111 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/css/site.css'
+2024-11-21 19:19:25.111 +03:00 [INF] HTTP GET /css/site.css responded 200 in 1.3812 ms
+2024-11-21 19:19:25.111 +03:00 [INF] Response: GET /css/site.css responded with 200
+2024-11-21 19:19:25.113 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/css/site.css?v=kXGEsr_0nTJk3FKcMxFxwgUnatnYWjyMmKnWf6njEhQ - 200 380 text/css 7.6002ms
+2024-11-21 19:19:25.113 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css'
+2024-11-21 19:19:25.113 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/css/all.min.css'
+2024-11-21 19:19:25.113 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css responded 200 in 4.1098 ms
+2024-11-21 19:19:25.113 +03:00 [INF] HTTP GET /lib/font-awesome/css/all.min.css responded 200 in 2.2220 ms
+2024-11-21 19:19:25.113 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css responded with 200
+2024-11-21 19:19:25.114 +03:00 [INF] Response: GET /lib/font-awesome/css/all.min.css responded with 200
+2024-11-21 19:19:25.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css - 200 162720 text/css 9.0361ms
+2024-11-21 19:19:25.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/css/all.min.css - 200 96518 text/css 8.0286ms
+2024-11-21 19:19:25.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js - null null
+2024-11-21 19:19:25.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - null null
+2024-11-21 19:19:25.144 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:19:25.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-11-21 19:19:25.144 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - null null
+2024-11-21 19:19:25.146 +03:00 [INF] Request: GET /lib/jquery/dist/jquery.min.js
+2024-11-21 19:19:25.146 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+2024-11-21 19:19:25.146 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:19:25.146 +03:00 [INF] Request: GET /js/site.js
+2024-11-21 19:19:25.147 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/jquery/dist/jquery.min.js'
+2024-11-21 19:19:25.148 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js'
+2024-11-21 19:19:25.150 +03:00 [INF] HTTP GET /lib/jquery/dist/jquery.min.js responded 200 in 4.1515 ms
+2024-11-21 19:19:25.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-11-21 19:19:25.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - null null
+2024-11-21 19:19:25.150 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/js/site.js'
+2024-11-21 19:19:25.150 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded 200 in 3.9237 ms
+2024-11-21 19:19:25.150 +03:00 [INF] Response: GET /lib/jquery/dist/jquery.min.js responded with 200
+2024-11-21 19:19:25.151 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js responded with 200
+2024-11-21 19:19:25.151 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-solid-900.woff2
+2024-11-21 19:19:25.150 +03:00 [INF] HTTP GET /js/site.js responded 200 in 0.3446 ms
+2024-11-21 19:19:25.151 +03:00 [INF] Request: GET /lib/font-awesome/webfonts/fa-brands-400.woff2
+2024-11-21 19:19:25.150 +03:00 [INF] HTTP GET /js/site.js responded 200 in 4.6765 ms
+2024-11-21 19:19:25.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/jquery/dist/jquery.min.js - 200 89501 text/javascript 6.9517ms
+2024-11-21 19:19:25.151 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:19:25.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78468 text/javascript 6.8522ms
+2024-11-21 19:19:25.151 +03:00 [INF] Response: GET /js/site.js responded with 200
+2024-11-21 19:19:25.152 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-brands-400.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-brands-400.woff2'
+2024-11-21 19:19:25.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js?v=X-8-CmnA43oOFQT-EDy2lhs6lC4KetG0iF7Fbap7LvE - 200 749 text/javascript 8.1365ms
+2024-11-21 19:19:25.152 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/font-awesome/webfonts/fa-solid-900.woff2'
+2024-11-21 19:19:25.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/js/site.js - 200 749 text/javascript 9.0058ms
+2024-11-21 19:19:25.153 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded 200 in 1.7028 ms
+2024-11-21 19:19:25.155 +03:00 [INF] HTTP GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded 200 in 3.9674 ms
+2024-11-21 19:19:25.155 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-brands-400.woff2 responded with 200
+2024-11-21 19:19:25.155 +03:00 [INF] Response: GET /lib/font-awesome/webfonts/fa-solid-900.woff2 responded with 200
+2024-11-21 19:19:25.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-brands-400.woff2 - 200 118072 font/woff2 5.9801ms
+2024-11-21 19:19:25.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/font-awesome/webfonts/fa-solid-900.woff2 - 200 157192 font/woff2 6.1554ms
+2024-11-21 19:19:25.158 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - null null
+2024-11-21 19:19:25.159 +03:00 [INF] Request: GET /lib/bootstrap/dist/css/bootstrap.min.css.map
+2024-11-21 19:19:25.162 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map'
+2024-11-21 19:19:25.162 +03:00 [INF] HTTP GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded 200 in 3.2652 ms
+2024-11-21 19:19:25.163 +03:00 [INF] Response: GET /lib/bootstrap/dist/css/bootstrap.min.css.map responded with 200
+2024-11-21 19:19:25.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/css/bootstrap.min.css.map - 200 449111 text/plain 5.5669ms
+2024-11-21 19:19:25.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - null null
+2024-11-21 19:19:25.286 +03:00 [INF] Request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map
+2024-11-21 19:19:25.290 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map'
+2024-11-21 19:19:25.291 +03:00 [INF] HTTP GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded 200 in 4.7106 ms
+2024-11-21 19:19:25.291 +03:00 [INF] Response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map responded with 200
+2024-11-21 19:19:25.294 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - 200 327261 text/plain 9.2274ms
+2024-11-21 19:19:25.295 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/favicon.ico - null null
+2024-11-21 19:19:25.296 +03:00 [INF] Request: GET /favicon.ico
+2024-11-21 19:19:25.297 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: '/Users/nikitakalabin/Documents/GitHub/SPPR/WEB_253503_Kalabin/WEB_253503_Kalabin.UI/wwwroot/favicon.ico'
+2024-11-21 19:19:25.298 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 1.6011 ms
+2024-11-21 19:19:25.298 +03:00 [INF] Response: GET /favicon.ico responded with 200
+2024-11-21 19:19:25.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/favicon.ico - 200 5430 image/x-icon 2.7838ms
+2024-11-21 19:19:59.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:19:59.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - null null
+2024-11-21 19:19:59.055 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:19:59.055 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:19:59.055 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:59.055 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:59.055 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:19:59.055 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:19:59.058 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:19:59.059 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:19:59.059 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:59.059 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:59.060 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:59.060 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:19:59.139 +03:00 [INF] Received HTTP response headers after 78.6777ms - 200
+2024-11-21 19:19:59.139 +03:00 [INF] End processing HTTP request after 79.2985ms - 200
+2024-11-21 19:19:59.139 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:59.139 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:59.140 +03:00 [INF] Received HTTP response headers after 79.8775ms - 200
+2024-11-21 19:19:59.140 +03:00 [INF] End processing HTTP request after 81.0642ms - 200
+2024-11-21 19:19:59.140 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:59.141 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=2&?pagesize=3
+2024-11-21 19:19:59.168 +03:00 [INF] Received HTTP response headers after 28.3179ms - 200
+2024-11-21 19:19:59.168 +03:00 [INF] End processing HTTP request after 28.5931ms - 200
+2024-11-21 19:19:59.168 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 108.3675ms.
+2024-11-21 19:19:59.168 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:19:59.169 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.5457ms.
+2024-11-21 19:19:59.169 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 109.9331ms
+2024-11-21 19:19:59.169 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:59.169 +03:00 [INF] Received HTTP response headers after 26.9845ms - 200
+2024-11-21 19:19:59.172 +03:00 [INF] HTTP GET /catalog responded 200 in 117.0522 ms
+2024-11-21 19:19:59.172 +03:00 [INF] End processing HTTP request after 31.2672ms - 200
+2024-11-21 19:19:59.172 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:19:59.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 118.7958ms
+2024-11-21 19:19:59.172 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 112.8343ms.
+2024-11-21 19:19:59.177 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:19:59.178 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.6917ms.
+2024-11-21 19:19:59.178 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 121.506ms
+2024-11-21 19:19:59.178 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:19:59.178 +03:00 [INF] HTTP GET /catalog responded 200 in 123.4645 ms
+2024-11-21 19:19:59.183 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:19:59.183 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=2 - 200 null text/html; charset=utf-8 129.6526ms
+2024-11-21 19:20:16.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - null null
+2024-11-21 19:20:16.462 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:20:16.462 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:20:16.463 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:20:16.464 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:20:16.464 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:20:16.464 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:20:16.475 +03:00 [INF] Received HTTP response headers after 10.2113ms - 200
+2024-11-21 19:20:16.475 +03:00 [INF] End processing HTTP request after 11.0687ms - 200
+2024-11-21 19:20:16.476 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:20:16.476 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=3&?pagesize=3
+2024-11-21 19:20:16.480 +03:00 [INF] Received HTTP response headers after 4.2077ms - 200
+2024-11-21 19:20:16.480 +03:00 [INF] End processing HTTP request after 4.8005ms - 200
+2024-11-21 19:20:16.481 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 16.7116ms.
+2024-11-21 19:20:16.481 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:20:16.481 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.613ms.
+2024-11-21 19:20:16.486 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 23.0317ms
+2024-11-21 19:20:16.486 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:20:16.486 +03:00 [INF] HTTP GET /catalog responded 200 in 23.9529 ms
+2024-11-21 19:20:16.486 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:20:16.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=3 - 200 null text/html; charset=utf-8 26.2088ms
+2024-11-21 19:20:26.344 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - null null
+2024-11-21 19:20:26.344 +03:00 [INF] Request: GET /catalog
+2024-11-21 19:20:26.345 +03:00 [INF] Executing endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:20:26.345 +03:00 [INF] Route matched with {action = "Index", controller = "Clothes", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253503_Kalabin.UI.Controllers.ClothesController (WEB_253503_Kalabin.UI).
+2024-11-21 19:20:26.346 +03:00 [INF] Executing action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) - Validation state: "Valid"
+2024-11-21 19:20:26.346 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:20:26.346 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Category
+2024-11-21 19:20:26.349 +03:00 [INF] Received HTTP response headers after 3.2941ms - 200
+2024-11-21 19:20:26.349 +03:00 [INF] End processing HTTP request after 3.6356ms - 200
+2024-11-21 19:20:26.350 +03:00 [INF] Start processing HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:20:26.350 +03:00 [INF] Sending HTTP request GET https://localhost:7002/api/Clothes/categories/all?pageno=1&?pagesize=3
+2024-11-21 19:20:26.351 +03:00 [INF] Received HTTP response headers after 1.4133ms - 200
+2024-11-21 19:20:26.351 +03:00 [INF] End processing HTTP request after 1.6778ms - 200
+2024-11-21 19:20:26.351 +03:00 [INF] Executed action method WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI), returned result Microsoft.AspNetCore.Mvc.PartialViewResult in 5.789ms.
+2024-11-21 19:20:26.352 +03:00 [INF] Executing PartialViewResult, running view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml.
+2024-11-21 19:20:26.352 +03:00 [INF] Executed PartialViewResult - view ~/Views/Shared/Components/Clothes/_ClothesListPartial.cshtml executed in 0.4725ms.
+2024-11-21 19:20:26.352 +03:00 [INF] Executed action WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI) in 7.1611ms
+2024-11-21 19:20:26.352 +03:00 [INF] Executed endpoint 'WEB_253503_Kalabin.UI.Controllers.ClothesController.Index (WEB_253503_Kalabin.UI)'
+2024-11-21 19:20:26.352 +03:00 [INF] HTTP GET /catalog responded 200 in 7.6854 ms
+2024-11-21 19:20:26.352 +03:00 [INF] Response: GET /catalog responded with 200
+2024-11-21 19:20:26.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7170/catalog?pageNo=1 - 200 null text/html; charset=utf-8 9.0483ms
+2024-11-21 19:24:34.076 +03:00 [INF] Application is shutting down...
